@@ -37,7 +37,7 @@ async def main():
 
     await rvr.set_all_leds(
         led_group=RvrLedGroups.all_lights.value,
-        led_brightness_values=[color for x in range(10) for color in [0, 255, 0]]
+        led_brightness_values=[color for x in range(10) for color in [255, 0, 0]]
     )
 
     # Delay to show LEDs change
